@@ -50,37 +50,76 @@
 <body class="hold-transition skin-blue sidebar-mini">
 
 <header class="main-header">
-    <!-- Logo -->
-    <a href="index2.html" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini">
-        <div class="ninja-head"></div>
-      </span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg">
+  <!-- Logo -->
+  <a href="index2.html" class="logo">
+    <!-- mini logo for sidebar mini 50x50 pixels -->
+    <span class="logo-mini">
       <div class="ninja-head"></div>
-        Colegio <b>Ninja</b>
-      </span>
+    </span>
+    <!-- logo for regular state and mobile devices -->
+    <span class="logo-lg">
+    <div class="ninja-head"></div>
+      Colegio<b>.Ninja</b>
+    </span>
+  </a>
+  <!-- Header Navbar: style can be found in header.less -->
+  <nav class="navbar navbar-static-top">
+    <!-- Sidebar toggle button-->
+    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+      <span class="sr-only">Toggle navigation</span>
     </a>
-    <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
-      <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
 
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-          <!-- Control Sidebar Toggle Button -->
-          <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-sign-out"></i> Sair</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <div class="navbar-custom-menu">
+      <ul class="nav navbar-nav">
+        <!-- Control Sidebar Toggle Button -->
+        <li>
+          <a href="#"><i class="fa fa-sign-out"></i> Sair</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-  <app-root></app-root>
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+    <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">NAVEGAÇÃO</li>
+    </ul>
+
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+<div class="content-wrapper">
+
+  <section class="content-header">
+    <h1>
+      Dashboard
+      <small>Control panel</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+      <li class="active">Dashboard</li>
+    </ol>
+  </section>
+
+  <section class="content">
+    <app-root></app-root>
+  </section>
+
+</div>
+
+<footer class="main-footer">
+  <div class="pull-right hidden-xs">
+    <b>Version</b> 2.4.0
+  </div>
+  <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
+  reserved.
+</footer>
+
+
     <script type="text/javascript" src="{{asset("js/inline.bundle.js")}}"></script>
     <script type="text/javascript" src="{{asset("js/polyfills.bundle.js")}}"></script>
     <script type="text/javascript" src="{{asset("js/styles.bundle.js")}}"></script>
