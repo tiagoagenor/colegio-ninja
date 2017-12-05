@@ -3,16 +3,27 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './common/header/header.component';
+import { MenuComponent } from './common/menu/menu.component';
+import { FooterComponent } from './common/footer/footer.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    MenuComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent,
+    HeaderComponent,
+    MenuComponent,
+    FooterComponent
+  ]
 })
 export class AppModule { }
